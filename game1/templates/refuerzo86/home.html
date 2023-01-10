@@ -1,38 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>REFUERZO86</title>
-</head>
+{% extends 'refuerzo86/layout.html' %}
 
-<body>
-
-   <div class="head">
+{% block content %}
+   
+<!--MENÚ DE ENLACES-->  
+<div class="head">
         
-        <div class="logo-header">
-        </div>
+    <div class="logo-header">
+    </div>
 
-        <nav class="navbar">
-            <a class="nav-link" href="templates/inicio.html">Inicio</a>
-            <a href="#">Productos</a>
-            <a href="#">Precio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Contacto</a>
-        </nav>
+    <nav class="navbar">
+        <a class="nav-link" href="#inicio.h" >Inicio</a>
+        <a class="nav-link" href="#productos.h" >Productos</a>
+        <a class="nav-link" href="#precios.h" >Precio</a>
+        <a class="nav-link" href="#nosotros.h" >Nosotros</a>
+        <a class="nav-link" href="about.html" >Juegos</a>
+        <a class="nav-link" href="#contacto.h">Contacto</a>
+    </nav>
 
-   </div>
+</div>
 
    <div class="container" p-6>
-    {% block content %}
-    {% endblock %}
+ 
   </div>
 
-  
-   <header class="content header">
+    <!--INICIO-->
+
+    <section class="content inicio" id="inicio.h">
        <h2 class="title">Inicio</h2>
        <p> 
             En REFUERZO ACADEMICO nuestra máxima prioridad es ayudar a los alumnos 
@@ -41,10 +34,12 @@
             peculiaridades de cada alumno. Cada alumno sigue un programa de 
             trabajo personalizado que está consensuado al empezar el seguimiento.
        </p>
-       <a href="#" class="btn">Saber mas</a>
-   </header>
+       <a href="about.html" class="btn">Saber mas</a>
+    </section>
+   
+     <!--PRODUCTOS-->
 
-   <section class="content productos">
+   <section class="content productos" id="productos.h">
 
     <article class="contain">
 
@@ -57,21 +52,21 @@
             para diversas circuntancias. Nuestros resultados y nuestros años de experiencia son nuestro
             mejor aval y la garantía de un servicio profesional y altamente cualificado.
         </p>
-        <a href="#" class="btn">Saber más</a>
+        <a href="productos.html" class="btn">Saber más</a>
 
     </article>
 
 </section>
 
-
-   <section class="content precios">
+    <!--PRECIOS-->
+   <section class="content precios" id="precios.h">
        <h2 class="title">Precios</h2>
         <p> 
             Los precios se clasifican según la cantidad de clases que el alumno requiera,
             esta cantidad se analiza en la primer clase!
         
         </p>
-
+        <!--contenedor de precios-->
         <div class="box-container">
 
             <div class="box">
@@ -103,11 +98,13 @@
             </div>
 
         </div>
+        <a href="precio.html" class="btn">Saber más</a>
+
 
    </section>
 
-
-   <section class="content about">
+   <!--NOSOTROS-->
+   <section class="content about" id="nosotros.h">
         <h2 class="title">Nosotros</h2>
         <p> 
             Somos un grupo de personas enfocadas en el mismo objetivo. Trabajamos con 
@@ -120,7 +117,8 @@
         <div class="box-container2">
 
             <div class="box">
-                <img src="img/pic1.jpg" alt="">
+            
+                <img src= "../../static/img/pic1.jpg">
                 <h3>Nacho</h3>
                 <p>Cs Exactas</p>
                 <div class="stars">
@@ -133,8 +131,9 @@
             </div>
 
             <div class="box">
-                <img src="img/pic2.jpg" alt="">
-                <h3>Diego</h3>
+                
+                <img src= "../../static/img/pic2.jpg">
+                <h3>Fernando</h3>
                 <p>Sistemas y marketing</p>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -146,7 +145,8 @@
             </div>
 
             <div class="box">
-                <img src="img/pic3.jpg" alt="">
+                
+                <img src= "../../static/img/pic3.jpg">
                 <h3>Antonella</h3>
                 <p>Relaciones y soporte</p>
                 <div class="stars">
@@ -161,33 +161,32 @@
         </div>
         
    </section>
-
-   <section class="content contact">
+   <!--CONTACTO-->
+   <section class="content contact" id="contacto.h">
         <h2 class="title">Contacto</h2>
 
         <div class="footer-section">
-
+                <!--whatsapp-->
             <div>
                 <i class="fa fa-apple"></i>
                 <p>WHATSAPP</p>
                 <a href=" https://wa.me/1123836306">+54 9 11 2383-6306</a>
             </div>
-
             <div class="f-enlaces">
                 <i class="fa fa-apple"></i>
+                 <!--email-->
                 <p>EMAIL</p>
-                <a href="#">refuerzo.escolar86@gmail.com</a>
+                <a href="#contacto.h">refuerzo.escolar86@gmail.com</a>
+                <!--instagram-->
                 <p>INSTAGRAM</p>
                 <a href="https://www.instagram.com/refuerzo.escolar86/">instagram: refuerzo.escolar86/</a>
             </div>
-
+            <!--mapa-->
             <figure>
-                <img src="img/mapa.png" height="220px" width="100%" alt="mapa">
+                <img src= "../../static/img//mapa.png" height="220px" width="100%" alt="mapa">
             </figure>
 
         </div>
 
    </section>
-    
-</body>
-</html>
+{% endblock content %}

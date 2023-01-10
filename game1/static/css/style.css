@@ -14,8 +14,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 63px;
-    background: #171717;
+    height: 100px;
+    background: #321ee9;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -26,8 +26,8 @@ body {
     margin-right: 10px;
 }
 
-.logo-header {
-     background-image: url("img/logo.jpg") ; alt:"REFUERZO86";
+.logo-header {  
+     background-image:url(../img/logo.jpg) ; alt: "refuerzo86";
      background-repeat: no-repeat;
      background-position: center;
      background-size: contain;
@@ -39,7 +39,8 @@ body {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 60px;
+
     
 }
 
@@ -53,16 +54,8 @@ body {
 }
 
 .navbar a:hover {
-    background: #e91e63;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    background: url(img/header.jpg) no-repeat center;
-    background-size: cover;
+    background:  rgb(236, 236, 29);
+    
 }
 
 .title {
@@ -70,14 +63,14 @@ body {
     font-size: 60px;
     font-weight: 600;
     text-transform: uppercase;
-    color: rgb(254, 253, 255);
+    color: #6453f6;
 }
 
 p {
     margin-bottom: 40px;
     font-size: 18px;
     background-color: #30303074;
-    color: rgb(236, 236, 29);
+    color: rgb(255, 255, 255);
     padding: 0 150px;
 
 }
@@ -97,14 +90,28 @@ p {
 }
 
 .content {
-    height: 50vh;
+    position: relative;
+    top:100px;
+    margin:auto auto auto auto; /* centra section */;
+    min-height:420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.inicio {
+    min-height:420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    background: url(../img/header.jpg) no-repeat center;
+    background-size: cover;
+}
+
 .precios {
+    margin:auto auto auto auto; /* centra section */
     padding: 50px 0;
     background: #303030;
 }
@@ -133,14 +140,14 @@ p {
     text-align: center;
     border-radius: 50%;
     color: #fff;
-    background: #e91e63;
+    background: #321ee9;
     font-size: 25px;
     margin: 10px 0;
 }
 
 .box-container .box h3 {
     font-size: 20px;
-    color: #e91e63;
+    color: #321ee9;
 }
 
 .box-container .box p {
@@ -149,14 +156,14 @@ p {
 }
 
 .productos {
-    background: url(img/costos.jpg) no-repeat center;
+    background: url(../img/costos.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
 }
 
 .about {
-    background: url(img/fractal.jpg) no-repeat center;
+    background: url(../img/fractal.jpg) no-repeat center;
     padding: 50px 0;
     background-size: cover;
     background-attachment: fixed;
@@ -186,12 +193,12 @@ p {
     object-fit: cover;
     border-radius: 50%;
     margin-top: -50px;
-    border: 6px solid #e91e63;
+    border: 6px solid #321ee9;
 }
 
 .box-container2 .box h3 {
     font-size: 20px;
-    color: #e91e63;
+    color:rgb(236, 236, 29);
     padding-top: 10px;
 }
 
@@ -204,7 +211,7 @@ p {
 
 .box-container2 .box .stars i {
     font-size: 15px;
-    color: #e91e63;
+    color: rgb(236, 236, 29);
 }
 
 .contact {
@@ -227,7 +234,7 @@ p {
 .f-enlaces a {
     color: #fff;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 @media (max-width: 768px) {

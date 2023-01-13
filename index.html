@@ -1,0 +1,192 @@
+{% extends 'refuerzo86/layout.html' %}
+
+{% block content %}
+   
+<!--MENÚ DE ENLACES-->  
+<div class="head">
+        
+    <div class="logo-header">
+    </div>
+
+    <nav class="navbar">
+        <a class="nav-link" href="#inicio.h" >Inicio</a>
+        <a class="nav-link" href="#productos.h" >Productos</a>
+        <a class="nav-link" href="#precios.h" >Precio</a>
+        <a class="nav-link" href="#nosotros.h" >Nosotros</a>
+        <a class="nav-link" href="about.html" >Juegos</a>
+        <a class="nav-link" href="#contacto.h">Contacto</a>
+    </nav>
+
+</div>
+
+   <div class="container" p-6>
+ 
+  </div>
+
+    <!--INICIO-->
+
+    <section class="content inicio" id="inicio.h">
+       <h2 class="title">Inicio</h2>
+       <p> 
+            En REFUERZO ACADEMICO nuestra máxima prioridad es ayudar a los alumnos 
+            y a sus familias durante la etapa escolar. Cada alumno es único y especial
+            así que nos adaptamos al nivel inicial, ritmo de aprendizaje y 
+            peculiaridades de cada alumno. Cada alumno sigue un programa de 
+            trabajo personalizado que está consensuado al empezar el seguimiento.
+       </p>
+       <a href="about.html" class="btn">Saber mas</a>
+    </section>
+   
+     <!--PRODUCTOS-->
+
+   <section class="content productos" id="productos.h">
+
+    <article class="contain">
+
+        <h2 class="title">Productos</h2>
+        <p>
+            REFUERZO ACADEMICO 86 es un centro de formación en España que cuenta con más de 10 años
+            preparando a nuestros alumnos para superar cualquier reto que se les haya presentado en
+            cualquier nivel de enseñanza, ya que abarcamos desde primaria, ESO, Bachillerato, acceso
+            a grado superior y universidad, y niveles altos de universidad así como la preparación 
+            para diversas circuntancias. Nuestros resultados y nuestros años de experiencia son nuestro
+            mejor aval y la garantía de un servicio profesional y altamente cualificado.
+        </p>
+        <a href="productos.html" class="btn">Saber más</a>
+
+    </article>
+
+</section>
+
+    <!--PRECIOS-->
+   <section class="content precios" id="precios.h">
+       <h2 class="title">Precios</h2>
+        <p> 
+            Los precios se clasifican según la cantidad de clases que el alumno requiera,
+            esta cantidad se analiza en la primer clase!
+        
+        </p>
+        <!--contenedor de precios-->
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fab fa-angular"></i>
+                <h3>INDIVIDUAL</h3>
+                <p>
+                    Sirve para reforzar un tema y/o resolver las ultimas dudas antes de un
+                    examen
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fab fa-apple"></i>
+                <h3>conjunto</h3>
+                    <p>
+                        El precio disminuye! Es para quienes requieran más de 3 clases
+                        pera preparar los temas en su totalidad.
+                    
+                    </p>
+            </div>
+
+            <div class="box">
+                <i class="fab fa-android"></i>
+                <h3>sin clases</h3>
+                <p>
+                    Me comentan la institución, temas y modalidad de examen. Luego, reciben
+                    un simulacro con resultados acorde.              
+                </p>
+            </div>
+
+        </div>
+        <a href="precio.html" class="btn">Saber más</a>
+
+
+   </section>
+
+   <!--NOSOTROS-->
+   <section class="content about" id="nosotros.h">
+        <h2 class="title">Nosotros</h2>
+        <p> 
+            Somos un grupo de personas enfocadas en el mismo objetivo. Trabajamos con 
+            principios y valores en todas nuestras áreas. Compromiso, constancia y 
+            siempre con la mente abierta para todo tipo de situación. No abandonamos
+            aunque se ponga dificil y esperamos contagiar un poco de esto en nuestros
+            alumnos. Intentando que los temas tengan aplicaciones reales para que sea
+            divertido e interesante estudiar.
+        </p>
+        <div class="box-container2">
+
+            <div class="box">
+            
+                <img src= "../../static/img/pic1.jpg">
+                <h3>Nacho</h3>
+                <p>Cs Exactas</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+            </div>
+
+            <div class="box">
+                
+                <img src= "../../static/img/pic2.jpg">
+                <h3>Fernando</h3>
+                <p>Sistemas y marketing</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+            </div>
+
+            <div class="box">
+                
+                <img src= "../../static/img/pic3.jpg">
+                <h3>Antonella</h3>
+                <p>Relaciones y soporte</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+            </div>
+
+        </div>
+        
+   </section>
+   <!--CONTACTO-->
+   <section class="content contact" id="contacto.h">
+        <h2 class="title">Contacto</h2>
+
+        <div class="footer-section">
+                <!--whatsapp-->
+            <div>
+                <i class="fa fa-apple"></i>
+                <p>WHATSAPP</p>
+                <a href=" https://wa.me/1123836306">+54 9 11 2383-6306</a>
+            </div>
+            <div class="f-enlaces">
+                <i class="fa fa-apple"></i>
+                 <!--email-->
+                <p>EMAIL</p>
+                <a href="#contacto.h">refuerzo.escolar86@gmail.com</a>
+                <!--instagram-->
+                <p>INSTAGRAM</p>
+                <a href="https://www.instagram.com/refuerzo.escolar86/">instagram: refuerzo.escolar86/</a>
+            </div>
+            <!--mapa-->
+            <figure>
+                <img src= "../../static/img//mapa.png" height="220px" width="100%" alt="mapa">
+            </figure>
+
+        </div>
+
+   </section>
+{% endblock content %}
